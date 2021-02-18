@@ -33,17 +33,20 @@ CREATE TABLE "employees" (
 
 CREATE TABLE "department_manager" (
     "department_number" VARCHAR(10)   NOT NULL,
-    "employee_number" VARCHAR(10)   NOT NULL
+    "employee_number" VARCHAR(10)   NOT NULL,
+    PRIMARY KEY ("employee_number")
 );
 
 CREATE TABLE "department_employee" (
     "employee_number" VARCHAR(10)   NOT NULL,
-    "department_number" VARCHAR(10)   NOT NULL
+    "department_number" VARCHAR(10)   NOT NULL,
+    PRIMARY KEY("employee_number","department_number")
 );
 
 CREATE TABLE "salaries" (
     "employee_number" VARCHAR(10)   NOT NULL,
-    "salary" INT   NOT NULL
+    "salary" INT   NOT NULL,
+    PRIMARY KEY ("employee_number")
 );
 
 ALTER TABLE "employees" ADD CONSTRAINT "fk_employees_title_id" FOREIGN KEY("title_id")
