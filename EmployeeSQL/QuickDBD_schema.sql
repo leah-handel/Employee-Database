@@ -19,7 +19,7 @@ CREATE TABLE "titles" (
 );
 
 CREATE TABLE "employees" (
-    "employee_number" VARCHAR(10)   NOT NULL,
+    "employee_number" INTEGER   NOT NULL,
     "title_id" VARCHAR(10)   NOT NULL,
     "dob" DATE   NOT NULL,
     "first_name" VARCHAR(30)   NOT NULL,
@@ -33,18 +33,18 @@ CREATE TABLE "employees" (
 
 CREATE TABLE "department_manager" (
     "department_number" VARCHAR(10)   NOT NULL,
-    "employee_number" VARCHAR(10)   NOT NULL,
+    "employee_number" INTEGER   NOT NULL,
     PRIMARY KEY ("employee_number")
 );
 
 CREATE TABLE "department_employee" (
-    "employee_number" VARCHAR(10)   NOT NULL,
+    "employee_number" INTEGER   NOT NULL,
     "department_number" VARCHAR(10)   NOT NULL,
     PRIMARY KEY("employee_number","department_number")
 );
 
 CREATE TABLE "salaries" (
-    "employee_number" VARCHAR(10)   NOT NULL,
+    "employee_number" INTEGER   NOT NULL,
     "salary" INT   NOT NULL,
     PRIMARY KEY ("employee_number")
 );
