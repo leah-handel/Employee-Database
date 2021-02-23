@@ -2,7 +2,7 @@
 
 ## General Info
 
-This project builds a database for and analyzes a set of basic employment data. It was created for week 10 homework for Northwestern's Data Science/Visualization bootcamp.
+This project builds a database for and analyzes a set of basic employment data. It was created for week 9 homework for Northwestern's Data Science/Visualization bootcamp.
 
 ## Technologies
 
