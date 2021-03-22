@@ -12,3 +12,8 @@ Project was created with:
 * SQL via PostgreSQL 11
 * Pandas via Jupyter Notebook
 
+## To Run
+
+* Load SQL schema from QuickDBD_schema.sql
+* Load data for each table from .csv files in the data directory
+* Run queries in queries.sql
